@@ -1,0 +1,25 @@
+Rapport de détection - 2025-06-03 14:22:42.065628
+
+[ALERTE] Scan ou reconnaissance de ressources sensibles : 4 occurrences
+  - 203.0.113.45 accède /admin (code 403)
+  - 198.51.100.23 accède /phpmyadmin/ (code 404)
+  - 203.0.113.60 accède /.env (code 403)
+  - 198.51.100.120 accède /admin/config.php.bak (code 404)
+
+[ALERTE] Injection SQL possible : 1 occurrences
+  - 192.0.2.77 accède /?id=1%20OR%201=1 (code 200)
+
+[ALERTE] Tentative de brute-force : 3 occurrences
+  - 203.0.113.99 accède /login.php (code 401)
+  - 203.0.113.99 accède /login.php (code 401)
+  - 203.0.113.99 accède /login.php (code 401)
+
+[ALERTE] XSS/LFI/RCE possible : 1 occurrences
+  - 192.0.2.100 accède /search.php?query=<script>alert(1)</script> (code 200)
+
+
+Explication des alertes:
+- Scan ou reconnaissance de ressources sensibles : Activité suspecte détectée.
+- Injection SQL possible : Activité suspecte détectée.
+- Tentative de brute-force : Activité suspecte détectée.
+- XSS/LFI/RCE possible : Activité suspecte détectée.
